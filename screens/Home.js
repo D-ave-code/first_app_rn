@@ -3,20 +3,18 @@ import { Button, style } from "react-native";
 import { useFetch } from "../useFetch";
 import { ScrollView } from "react-native";
 import Cards from "../componentes/cards";
-import { useOpen } from "../useOpen";
 
 const Home = ({ navigation }) => {
   const { data } = useFetch("https://api.github.com/users/D-ave-code");
-  let prompt = "quien gano el mundial 2018";
-  const data1 = useOpen(prompt);
+
   return (
     <ScrollView>
       <View style={{ flex: 1, backgroundColor: "black" }}>
-        <View style={{ flex: 1, backgroundColor: "green" }}>
+        <View style={{ flex: 1, backgroundColor: "red" }}>
           
 
           <Cards
-            red_social={data1.content}
+            red_social="Github"
             imagen={data.avatar_url}
             username={data.login}
             repos={data.public_repos}

@@ -16,7 +16,7 @@ export function useOpen(prompt) {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer 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",
+              "Bearer ",
           },
         }
       )
