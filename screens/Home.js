@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useFetch } from "../useFetch";
 import { ScrollView, StyleSheet } from "react-native";
 import Cards from "../componentes/Cards";
+import Icon from "react-native-vector-icons/FontAwesome";
 
 const Home = ({ navigation }) => {
   const { data } = useFetch("https://api.github.com/users/D-ave-code");
@@ -26,7 +27,7 @@ const Home = ({ navigation }) => {
           <Image
             style={styles.image}
             source={{
-              uri: "https://www.fotoefectos.com/i/4285_portada-facebook-personalizable-un-gato-gafas.jpg",
+              uri: "https://i.pinimg.com/736x/ca/3c/4f/ca3c4f626be1b0082176367e10cdb8e0.jpg",
             }}
           />
         </ImageBackground>
@@ -38,7 +39,7 @@ const Home = ({ navigation }) => {
             fontWeight: "bold",
           }}
         >
-          REDES SOCIALES
+        <Icon name="leaf" size={32} color="green"></Icon>  REDES SOCIALES <Icon name="comments-o" size={32} color="black"></Icon>
         </Text>
       </View>
       <ScrollView>
@@ -89,6 +90,14 @@ const Home = ({ navigation }) => {
               icon="reddit"
               color_icon="orange"
             />
+            <Cards
+              red_social="linkedin"
+              imagen="https://media.licdn.com/dms/image/D4E35AQFGfVFYaCOkGQ/profile-framedphoto-shrink_200_200/0/1687500632996?e=1707012000&v=beta&t=7MRmPrduln5pbrRaUhnfj51i-nVP3KppwrkkRy_d95E"
+              username="David Espinosa"
+              link="https://www.reddit.com/user/ocelotte_dave/"
+              icon="linkedin"
+              color_icon="#0a66c2"
+            />
           </View>
         </View>
       </ScrollView>
@@ -105,7 +114,7 @@ const Home = ({ navigation }) => {
 const styles = StyleSheet.create({
   // Estilos de la imagen
   image: {
-    width: 400,
+    width: 500,
     height: 128,
     borderRadius: 5,
     marginRight: 10,

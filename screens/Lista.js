@@ -20,7 +20,7 @@ const Lista = ({ navigation }) => {
       <Articulos
         key={index}
         likes={user.likes}
-        imagen={user["urls"]["raw"]}
+        imagen={user["urls"]["thumb"]}
         descripcion={user.alt_description}
       />
     );
