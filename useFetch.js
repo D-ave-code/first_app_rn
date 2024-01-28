@@ -5,10 +5,11 @@ export function useFetch(url) {
   useEffect(() => {
     axios
       .get(url)
-      .then((response) => setData(response.data, console.log(data)))
+      .then((response) => setData(response.data))
       .catch((err) => console.log(err));
       
+      
   }, []);
-
-  return { data };
+  
+  return  {data} ;
 }
