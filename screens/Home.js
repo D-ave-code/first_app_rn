@@ -18,6 +18,8 @@ const Home = ({ navigation }) => {
           paddingTop: 10,
         }}
       >
+       
+
         <ImageBackground
           style={styles.image}
           source={
