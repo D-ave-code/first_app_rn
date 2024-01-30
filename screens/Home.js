@@ -96,7 +96,7 @@ const Home = ({ navigation }) => {
               red_social="linkedin"
               imagen="https://media.licdn.com/dms/image/D4E35AQFGfVFYaCOkGQ/profile-framedphoto-shrink_200_200/0/1687500632996?e=1707012000&v=beta&t=7MRmPrduln5pbrRaUhnfj51i-nVP3KppwrkkRy_d95E"
               username="David Espinosa"
-              link="https://www.reddit.com/user/ocelotte_dave/"
+              link="https://www.linkedin.com/in/david-espinosa-89016a11a/"
               icon="linkedin"
               color_icon="#0a66c2"
             />
